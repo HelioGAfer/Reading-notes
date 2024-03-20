@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#   u   g   o
+#.  rw  rw- r--
+
+#r = read
+#w = write
+#x = execute
+
+#r=4
+#w=2
+#x=1
+
+ls -la
