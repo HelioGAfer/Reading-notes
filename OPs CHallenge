@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#creating menu
+
+while true; do
+    clear
+    echo "Choose your option"
+    echo "1. Hello World"
+    echo "2. Ping myself"
+    echo "3. IP info"
+    echo "4. Exit"
+    read choice
+
+    if [ "$choice" == 1 ]; then
+            echo "HEY! What's up Doc?"
+    fi
+
+#Internet command search for how can I stop the ping loop by limiting the number of pack sent.
+#The -c 3 command specifies the count of packets to send. In this case, it's set to 3, meaning it will send 3 ICMP echo requests to the specified address.
+    if [ "$choice" == 2 ]; then
+            ping -c 3 127.0.0.1
+    fi
+
+    if [ "$choice" == 3 ]; then
+            ip a
+    fi
+
+    if [ "$choice" == 4 ]; then
+            echo "Cya Later"
+            exit 0
+    fi
+
+#Searched internet for a command that prompts he user to press any key to continue, and it will wait until the user presses a single key before proceeding (-n 1)
+#A command wich only the input char is read (-p)
+read -n 1 -p "Press any key to continue..."
+
+
+
+done
