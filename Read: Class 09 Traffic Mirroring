@@ -1,0 +1,76 @@
+What are the differences between SPAN and TAP?
+
+
+Operation:
+
+SPAN operates within the switch, mirroring selected traffic from source ports to a monitoring port.
+TAP operates externally to the switch, physically duplicating all traffic passing through a network link.
+
+Visibility:
+
+SPAN provides visibility into specific network traffic selected within the switch.
+TAP provides complete visibility into all traffic passing through the link, both incoming and outgoing.
+
+Impact on Network Performance:
+
+SPAN can introduce some level of impact on network performance due to its reliance on switch resources.
+TAP has minimal impact on network performance as it operates passively.
+
+Reliability:
+
+SPAN may have limitations or points of failure within the switch.
+TAP is generally considered more reliable as it operates independently of the network infrastructure.
+
+Cost and Complexity:
+
+SPAN is typically a feature of enterprise-grade switches with no additional cost, but may require expertise to configure.
+TAPs are standalone devices incurring additional upfront costs, but offer simplicity and flexibility in monitoring setups.
+
+Ultimately, the choice between SPAN and TAP depends on factors such as network architecture, performance requirements, and budget considerations.
+
+
+
+What types of network devices can support network traffic mirroring?
+
+It is supported by various devices such as:
+- Switches
+- Routers
+- Firewalls
+- Network TAP's
+- IDS/IPS appliances
+
+
+How can network traffic mirroring be used for network security?
+
+It can be used for:
+- Threath detectionn with associated tools like IDS,DLP
+- Policy Vilation
+- Compliance
+- Logging
+
+
+Are there any legal or ethical considerations when using network traffic mirroring?
+
+
+
+Packet sniffing can be a useful tool for ethical hacking and network security analysis, but there are legal and ethical considerations to take into account. Here are some key aspects to consider:
+
+Legality: Packet sniffing can be legal under certain circumstances, such as when it's done with the explicit consent of network owners or when it's done for the purpose of network security analysis. However, in many cases, packet sniffing without permission is illegal and can result in criminal charges.
+Ethical considerations: Even when packet sniffing is legal, ethical considerations must be taken into account. It's important to ensure that the information obtained through packet sniffing is used only for its intended purpose and that personal privacy is respected.
+Professional standards: Professional standards for ethical hacking and network security analysis should be followed to ensure that packet sniffing is done in an ethical and legal manner.
+
+
+
+
+
+
+
+Resources:
+
+
+
+https://accedian.com/
+https://youtube.com
+https://www.garlandtechnology.com/
+https://www.linkedin.com/
+Code for All Lectures
