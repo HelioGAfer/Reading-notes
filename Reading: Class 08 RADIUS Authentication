@@ -1,0 +1,66 @@
+Computer Network - AAA (Authentication, Authorization and Accounting)
+
+Explain each of the three A’s as you would to a non-technical family member. Use an analogy or a story.
+
+The first "A" Stands for Authentication wich is the process by which it can be identified that the user, which wants to access the network resources, valid or not by asking some credentials such as username and password
+You can consider this "A" as a question Like: "Who are you?".
+The second "A" is Authorization - After the authentication is successful, authorization can be used to determine what resources is the user allowed to access and the operations that can be performed. You can think of this as another question: "What permissions do you have" or "Where can you go"?
+Finnaly, the third "A" means Accounting and provides means of monitoring and capturing the events done by the user while accessing the network resources. Once again, we can analog this situation like "Ok, you can go, but I'm whatching You".This third A obeys a principle - the non-repudiation principle- wich means that an action performed by the user cannot be denied later by the user itself.
+
+
+What should the administrator do if the ACS server fails to authenticate a user during AAA implementation?
+
+If the ACS server fails to authenticate, the administrator should mention using the local database of the device as a backup, in the method list, to implement AAA.
+
+
+What is the role of the NAS in the AAA implementation using an ACS server? Use a diagram.
+
+Network Access Controls (NAC) are authentication systems that protect metworl access from unauthorized usage. Among other things they can:
+- Policy lifecycle management
+- Profiling and visibility
+- Guest networking access
+- Security porture check
+- Incident response
+- Bidirectional integration.
+
+
+
+
+RADIUS Concepts
+
+What are the benefits of using RADIUS for authentication and authorization?
+
+
+
+The additional security benefits of RADIUS include:
+
+Unique credentials for each user, reducing the risk of network infiltration.
+Simplified password management, eliminating the need for routine changes.
+Centralized user and system authentication, streamlining management.
+Effective control over network access, vital for larger networks.
+
+Secure VPN authentication, extending network security beyond WiFi.
+Easy activation/deactivation with cloud-based RADIUS, managed by third-party providers.
+Seamless integration with existing IT systems, providing flexibility and ease of use.
+
+
+What is RADIUS and what does it stand for?
+
+RADIUS stands for "Remote Authentication Dial-In User Service" and is a network management protocol that facilitates AAA management for network users.
+
+
+Research: What encryption algorithms does RADIUS use?
+
+RADIUS does use os ceratain encryption algorithms .These algorithms include Message Digest 5 (MD5), Secure Hash Algorithm 1 (SHA-1), Transport Layer Security (TLS), and Extensible Authentication Protocol (EAP).
+
+
+
+
+
+
+Resources:
+https://www.geeksforgeeks.org/
+https://archive.is/
+https://www.professormesser.com/
+https://jumpcloud.com/
+Code for All Lectures
