@@ -1,0 +1,45 @@
+What is the main purpose for implementing NAT on a network?
+
+To access the Internet, one public IP address is needed, but we can use a private IP address in our private network. The idea of NAT is to allow multiple devices to access the Internet through a single public address. To achieve this, the translation of a private IP address to a public IP address is required. Network Address Translation (NAT) is a process in which one or more local IP address is translated into one or more Global IP address and vice versa in order to provide Internet access to the local hosts
+There is some advantages on using NAT NEtwork, such as:
+- NAT conserves legally registered IP addresses.
+- It provides privacy as the device’s IP address, sending and receiving the traffic, will be hidden.
+- Eliminates address renumbering when a network evolves. 
+
+At what layer of the OSI model does NAT happen?
+
+NAT typically operates at the network layer (Layer 3) of the OSI model. It translates IP addresses found in the network layer headers of packets, allowing devices with private IP addresses to communicate with devices outside their local network.
+
+
+What happens to packets when NAT runs out of addresses in the pool of available IPs?
+
+If we were to run out of IPv4 addresses , it would create significant challenges for the growth of the internet and the connectivity of new devices. IPv4 is the most widely used Internet Protocol, and its limited address space has led to the exhaustion of available addresses. To solve this issue, IPv6 was presented to provide a much larger pool of IP addresses, ensuring the continued growth of the internet and the connectivity of devices.  
+
+
+
+
+What disadvantage does using NAT pose for routers?
+
+
+
+Resource consumption. Network address translation is a technology that consumes memory resources and processor space, because it must translate IPv4 addresses for all outgoing and incoming IPv4 datagrams and retain the details from translation in memory.
+
+Delays. Path delays are caused by translation results in switching path delays.
+Functionality. Some applications and technologies will not function as expected with NAT enabled.
+
+Traceability. Network address translation complicates protocols for tunneling. IPsec is the secure protocol recommended for network address translation.
+
+Layer issue. A router is a device for the network layer, yet as a NAT device it is required to tamper with the transport layer in the form of port numbers.
+
+
+
+
+
+
+
+Resources:
+https://avinetworks.com/
+https://medium.com/
+https://www.geeksforgeeks.org/
+https://www.professormesser.com/
+Code for all Lectures
