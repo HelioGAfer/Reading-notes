@@ -1,0 +1,43 @@
+How can one host within a VPC any services that need to be public?
+
+
+
+To host services within a VPC that need to be public:
+
+Create a public subnet within the VPC.
+Launch instances (e.g., web servers, load balancers) in the public subnet.
+Assign public IP addresses to these instances.
+Configure security groups to allow inbound traffic on necessary ports.
+Optionally, set up Network Access Control Lists (NACLs) for additional control.
+Associate the public subnet with a route table directing traffic to an internet gateway.
+Optionally, use load balancers for distributing incoming traffic across instances.
+
+This setup allows services to be publicly accessible while maintaining control over security and network access within the VPC.
+
+
+
+
+What are examples of services that would live in the publicly-accessible part of the VPC? The privately-accessible part?
+
+Publicly-accessible part of the VPC:
+
+- Web Servers -  These servers host websites or web applications accessible to users over the internet.
+- Load Balancers - refers to efficiently distributing incoming network traffic across a group of backend servers, also known as a server farm or server pool.
+- Public API's - is an application programming interface made publicly available to software developers.
+
+Privately-accessible part of the VPC:
+
+- Data Base Servers - A database server runs a database management system and provides database services to clients.
+- Application Servers - An application server is a program that resides on the server-side, and it’s a server programmer providing business logic behind any application.
+- Internal API's - An internal API is an interface that enables access to a company's backend information and application functionality for use by the organization's developers.
+
+
+What are the trade-offs of using a VPC vs traditional infrastructure?<
+
+When deciding between a traditional network infrastructure and a virtual private cloud network, consider factors such as deployment, management, scalability, security, cost, and flexibility. While traditional networks offer more control over physical hardware and can be beneficial for organizations with specific compliance requirements, VPCs provide a more flexible, scalable, and cost-effective solution for many small businesses. Ultimately, the right choice will depend on your organization’s unique needs and priorities.
+
+https://www.techtarget.com/
+https://www.cloudflare.com/
+https://www.google.com/
+https://smallbusinesstechnicalsupport.com/
+Code for All Lectures
