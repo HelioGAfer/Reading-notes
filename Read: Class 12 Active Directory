@@ -1,1 +1,64 @@
+What exactly is “Active Directory” and are the key services it provides?
+
+Active Directory (AD) is Microsoft’s directory and identity management service for Windows domain networks. It was introduced in Windows 2000, is included with most MS Windows Server operating systems, and is used by a variety of Microsoft solutions like Exchange Server and SharePoint Server, as well as third-party applications and services.
+The key services that AD provides are:
+
+
+
+User authentication. AD DS authenticates users before they can access resources on the network, ensuring only authorized individuals have entry to specific parts of the system.
+Data storage. It stores directory data, like usernames, passwords and phone numbers, which help streamline operations within an organization.
+Policies enforcement. With group policy objects (GPO), administrators can enforce security policies across multiple machines at once, saving time while maintaining high levels of security.
+
+What are the differences between a domain, forest, and tree in Active Directory?
+
+
+
+A domain tree is simply a collection of one or more domains that share a common namespace. The fx.movie.edu and movie.edu domains would be considered part of the movie.edu domain tree; however, the example.com domain, if created after movie.edu, would be in a separate domain tree called example.com. If the domain you create does not contain the full name of the parent domain or forest root domain, it is considered part of a separate domain tree.
+
+A forest is a collection of one or more domain trees. The domains in the movie.edu domain tree and the example.com domain tree could be part of the same forest. A domain tree is based on a common namespace, but a forest is not.
+
+
+
+
+Container objects: These objects can contain other objects within them. Groups and organizational units (OUs) are examples of container objects.
+Leaf objects: Leaf objects cannot contain other objects. These objects are only representations of resources in the AD network. Users, computers, and printers are examples of leaf objects.
+
+How can objects (e.g. users, devices) within a domain be grouped?
+
+
+
+There are two types of AD objects, which are:
+
+Explain the benefits of Active Directory, as you would to a family member.
+
+
+
+Streamlined User Management
+
+AD simplifies user account management by providing a centralized platform to create, modify or delete users across the entire network. This means that manual administration of users on individual machines within your network is a thing of the past.
+
+Enhanced Network Security
+
+AD’s robust security features safeguard sensitive data against cyber threats. Group policies and access controls enforce strict password requirements and limit users’ access to specific files or applications based on their specific roles within the company.
+
+Simplified Resource Sharing
+
+Sharing resources like printers or files across a network is much simpler with AD. Administrators can manage these resources centrally, making them available to all users without additional software installation.
+
+Better Group Policy Implementation
+
+The Group Policy feature in AD enables admins to control how systems operate and what users can do on those systems. From setting up firewall rules to disabling USB ports on endpoints for enhanced security--everything becomes easier with group policies in place.
+
+Faster Troubleshooting
+
+When issues arise, having a centralized system like AD helps diagnose problems faster by providing detailed logs about user activities and system events.
+
+
+
+
+Resources:
+https://www.cyberark.com/
+https://www.cyberark.com/
+https://www.google.com/
+Code for All Lectures
 
