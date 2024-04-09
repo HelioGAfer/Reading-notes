@@ -1,0 +1,30 @@
+What is a server, and how is it different from a regular computer? How would you describe this difference to a friend who doesn’t know much about computers?
+
+The definition of Server depends on the context
+
+- HARDWARE (Ex: HP Proliant, DELL Power Edge, NAS File Server)
+- OS (Ex: Windows Server 2019, Ubuntu Linux Server)
+- SOFTWARE (Ex: File Server, NGINX Web Server Running Linux)
+
+The differences between them can be splitted in 3 :
+Uses
+The use cases are the reasons for all of the other differences between these types of computers. As mentioned before, desktop PCs are designed for one user at a time to interface directly with the computer. Whether you’re watching a movie or writing a term paper, you work with the computer at the same desk.
+
+Servers are made for users or devices to access them through networking. Servers perform all kinds of different tasks, but generally speaking, you’re not sitting at the same desk with the server when you use it. That’s the primary difference.
+
+Hardware
+Because of the different uses, servers and desktop PCs use different hardware. Even though they have the same components, server hardware tends to be more expensive. It’s more reliable and often built with redundancy. Server hardware also uses less energy and takes up less physical space. All of this is so you can pack as much computer power as possible into a small area while minimizing electricity costs and maximizing reliability and uptime.
+
+As for PCs, they tend to focus more on single applications. Because of that, you might see higher raw speeds on a PC when compared to a server, but the PC typically has many, many fewer cores (or even fewer processors) and a lot less RAM.
+
+Software
+Lastly, the operating systems for these two types of devices are completely different. If you have used a PC, you know that the operating system is designed to put a bunch of different functions at your fingertips. At the same time, the operating systems typically need you to restart them every now and then, and they have power-saving features that more or less shut the computer down when it isn’t in use.
+
+
+
+How does the way Windows Server receives updates differ from Windows Home and Pro?
+While the update mechanisms are similar, Windows Server updates are tailored to its server role, with more focus on stability and security, and offering additional management tools for administrators.
+
+Does Windows Server have different hardware requirements than Windows Home or Pro?
+
+Overall, while there might be some overlap in basic hardware requirements, Windows Server editions are optimized for server workloads and may have additional hardware considerations compared to Windows Home or Pro, which are designed for desktop and consumer use.
