@@ -1,0 +1,46 @@
+Explain the role of a Domain Controller?
+
+
+
+Windows domains provide network administrators with a way to manage a large number of PCs and control them from one place. One or more servers -- known as domain controllers -- have control over the domain and the computers on it.
+
+Domains are generally made up of computers on the same local network. However, computers joined to a domain can continue communicating with their domain controller over VPN or Internet connection. This allows businesses and schools to remotely manage laptops they provide to their employees and students.
+Domains limit what you can do on your PC. When your computer is part of a domain, the domain controller is in charge of what you can do. This is why they're used on large corporate and educational networks -- they provide a way for the institution that provides the computers to lock them down and centrally administer them.
+
+
+What is the benefit of being able to login with the same username and password on any computer joined to the domain? What are the security risks?
+
+Joining a domain offers several benefits. It allows for centralized user authentication, meaning you can log in with the same username and password on any computer within the domain. It also enables centralized management of resources, such as controlling access to files, printers, and applications.
+
+The security risks are:
+
+- Phishing
+- Domain Name System (DNS) spoofing
+- Domain hijacking
+- Typossquatting
+- 
+Describe how group policies are used in domains?
+
+Microsoft’s Group Policy Object (GPO) is a collection of Group Policy settings that defines what a system will look like and how it will behave for a defined group of users.
+The processing order of Group Policies effects what settings are applied to the computer or end-user. This processing order is known as LSDOU: local, site, domain, organization unit. First the local computer policy is processed, followed by Active Directory policies from site level to domain, then into OU (GPOs in nested organizational units apply from the OU closest to the root first, and continues from there). If there are any conflicts, the last applied policy will take effect.
+
+
+In what other ways can you think of that domains could be used beyond what was presented in the reading?
+
+
+
+The domain controller is a server with a program called the Active Directory that manages all user information. The benefits of having this for your company are:
+
+Controlling all the user accounts from one location
+Rolling out software simultaneously
+Controlling the security settings of your company files and programs
+Linking your on-premise domain controller with the cloud
+Threading in third-party software in the management of your user accounts
+
+
+
+Resources:
+https://www.howtogeek.com/
+https://www.lenovo.com
+https://bolster.ai/blog/domain-security-risks
+https://www.itsasap.com/
