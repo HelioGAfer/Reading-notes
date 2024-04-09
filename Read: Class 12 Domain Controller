@@ -1,1 +1,48 @@
+Explain the role of a Domain Controller?
 
+
+
+Windows domains provide network administrators with a way to manage a large number of PCs and control them from one place. One or more servers -- known as domain controllers -- have control over the domain and the computers on it.
+
+Domains are generally made up of computers on the same local network. However, computers joined to a domain can continue communicating with their domain controller over VPN or Internet connection. This allows businesses and schools to remotely manage laptops they provide to their employees and students.
+
+Domains limit what you can do on your PC. When your computer is part of a domain, the domain controller is in charge of what you can do. This is why they're used on large corporate and educational networks -- they provide a way for the institution that provides the computers to lock them down and centrally administer them.
+
+
+What is the benefit of being able to login with the same username and password on any computer joined to the domain? What are the security risks?
+
+Centralized identity management: All users across the network can be configured from Active Directory with minimum effort.Managing security policies: You can configure security policies directly from Active Directory and apply them to users and computers across the network as needed.
+The risks are :
+Single Point of Failure: If a user's credentials are compromised, an attacker would gain access to all resources accessible by that user across the entire domain. This increases the potential impact of a security breach.
+Password Policy Enforcement: If a strong password policy is not enforced, users may choose weak or easily guessable passwords, increasing the likelihood of unauthorized access.
+Lack of Accountability: When multiple users log in to a computer using the same shared credentials, it becomes difficult to attribute actions performed on that computer to specific individuals. This can hinder accountability and auditing efforts in the event of security incidents or policy violations.
+Credential Harvesting: Attackers may attempt to harvest credentials by tricking users into entering their usernames and passwords on malicious websites or phishing emails. Once obtained, these credentials can be used to access resources across the domain.
+
+
+Describe how group policies are used in domains?
+
+The processing order of Group Policies effects what settings are applied to the computer or end-user. This processing order is known as LSDOU: local, site, domain, organization unit. First the local computer policy is processed, followed by Active Directory policies from site level to domain, then into OU (GPOs in nested organizational units apply from the OU closest to the root first, and continues from there). If there are any conflicts, the last applied policy will take effect.
+
+
+In what other ways can you think of that domains could be used beyond what was presented in the reading?
+
+
+
+Domains can be used in various ways to organize, manage, and secure resources on a network:
+
+Corporate Network Infrastructure: Centralized management of user accounts, computers and servers.
+Education Institutions: Management of student and faculty accounts.
+Government Agencies: Control access to government systems, secure sensitive information, and enforce compliance with regulations.
+Healthcare Organizations: Secure management of patient records, access to medical information, and compliance with healthcare privacy regulations.
+Nonprofit Organizations: Management of volunteer accounts, resources, and donor information.
+Small and Medium-sized Businesses: Simplified management of user accounts, computers, and security policies.
+Remote Access and VPNs: Secure remote access to network resources from remote locations.
+Cloud Integration: Integration with cloud services for centralized identity management and authentication
+
+
+
+Resources:
+https://www.howtogeek.com/
+https://www.techtarget.com/
+https://www.professormesser.com/
+Code for All Lectures
