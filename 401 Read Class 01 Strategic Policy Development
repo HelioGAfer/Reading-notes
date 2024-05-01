@@ -1,0 +1,41 @@
+How would you convince your future company to pursue SOC2 compliance?
+
+
+Firstly, it would make the company understand the importance of applying SOC 2, since the application of this framework is internationally recognized.
+
+It could initially be complicated and time-consuming to apply all the rules related to implementation, but it would give results in the medium-long term.
+
+What are the five SOC2 Trust Principles?
+
+
+
+The Trust Principles are:
+
+Security: The objective is to ensure that information and systems are protected against unauthorized access, unauthorized disclosure of information, and damage to systems. This is achieved through nine points of focus, including control environment, communication and information, risk assessment, monitoring activities, control activities, logical and physical access controls, system operations, change management, and risk mitigation.
+
+Availability: The objective is to ensure that systems are available and that information is accessible to the user. This is achieved through three points of focus, although specific details on these points are not provided in the excerpt.
+
+Confidentiality: The objective is to ensure that information defined as confidential within the system is protected. This is achieved through two points of focus, although specific details on these points are not provided in the excerpt.
+
+Processing Integrity: The objective is to ensure that system and information processing is complete, valid, accurate, timely, and authorized to meet the entity’s objectives. This is achieved through five points of focus, although specific details on these points are not provided in the excerpt.
+
+Privacy: The objective is to ensure that personal information is handled appropriately and in compliance with applicable privacy regulations. There are eight additional points of focus to meet the privacy criteria. This can be the most challenging aspect for many entities due to the specific requirements and potential regulatory implications.
+
+How would your explain the three levels of the SOC2 pyramid in an analogy your friends or former colleagues would understand?
+
+
+
+SOC 2 principles can be likened to building a vehicle:
+
+Frame (Security): Like a sturdy frame provides structural integrity, security forms the foundation, protecting systems and data against threats.
+Engine and Transmission (Availability, Confidentiality, Processing Integrity): Availability ensures systems are always ready, confidentiality protects sensitive data, and processing integrity ensures accurate data processing.
+Safety Features (Privacy): Privacy acts like safety features, protecting personal information and ensuring compliance with regulations.
+
+
+
+
+Resources:
+
+https://www.vendr.com/
+https://cloudsecurityalliance.org/
+Code for All Lectures
