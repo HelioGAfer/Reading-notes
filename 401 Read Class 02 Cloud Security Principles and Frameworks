@@ -1,0 +1,52 @@
+Explain the levels of abstraction in AWS to someone without a technical background.
+
+
+
+Imagine AWS like a big toolbox full of tools to help you build things on the internet. These tools come in different levels of complexity, depending on how much you want to get your hands dirty.
+
+Level 1: Basic Building Blocks (Screwdrivers and Wrenches) - This is like having individual screws, nuts, and bolts. You have the most control over everything, but it takes a lot of effort to put anything together. In AWS, this level includes things like EC2 instances (virtual machines) and S3 buckets (storage).
+
+Level 2: Prefabricated Parts (Shelves and Cabinets) - Here, you have pre-built components that snap together easily. It's like having shelves and cabinets instead of individual pieces of wood. You still have some control over how things are arranged, but it's faster to build something. In AWS, this could be Lambda functions (code that runs on demand) or containers (mini-environments for your code).
+
+Level 3: Higher-Level Services (Full Kitchens and Bathrooms) - This is like having entire rooms pre-built. You don't need to worry about plumbing or wiring, you just install the room where you need it. In AWS, this could be services like Amazon DynamoDB (a database) or Amazon SQS (a messaging queue). These services take care of the underlying complexity for you.
+
+The higher the level of abstraction, the less you need to worry about the nuts and bolts and the more you can focus on what you're actually building. It's like using pre-made ingredients instead of growing your own vegetables to cook a meal.
+
+Container management relies on two key areas: control plane and data plane.
+
+Control Plane (The Boss): This is the decision-maker, like a boss in a company. It figures out where to run containers, sets up their network connections, scales them up or down, and enforces security.
+
+Data Plane (The Workers): These are the workhorses that actually run the container applications. They handle the day-to-day tasks like processing data, forwarding network traffic, and keeping the containers running smoothly.What are the control plane and data plane responsible for in container abstraction?
+
+
+
+Where does AWS Lambda fall in the layers of abstraction and what makes it so special?
+
+
+
+In the world of AWS abstraction layers, AWS Lambda sits at a unique level: serverless computing.
+
+Traditional Services (Level 2 & 3): Think of traditional services like EC2 instances (virtual machines) or DynamoDB (database) as pre-built components (Level 2) or even full rooms (Level 3) in our toolbox analogy. You have some control over them, but you still need to manage things like servers, databases, and security.
+
+AWS Lambda (The Magic Box): Lambda operates on a different level entirely. It's like a magic box that takes care of everything behind the scenes. You simply provide your code, and Lambda takes care of provisioning the resources, running the code, and scaling it up or down based on demand. You don't need to worry about servers, security patches, or managing infrastructure.
+
+Here's what makes Lambda special:
+
+Focus on Code: You only write and upload the code you want to run. Lambda handles the rest.
+Automatic Scaling: Lambda scales your code execution automatically based on incoming requests. No need to worry about server capacity.
+Pay-Per-Use: You only pay for the compute time your code uses, making it very cost-effective for event-driven applications.
+
+While Lambda offers a high level of abstraction, it's not a one-size-fits-all solution. It's ideal for tasks that are:
+
+Short-lived: Functions typically run for milliseconds or seconds.
+Event-driven: Triggered by events like user actions, sensor data, or API calls.
+Stateless: Don't require maintaining data between executions.
+
+However, for long-running processes or applications requiring persistent storage, traditional services like EC2 or containers might be more suitable.
+
+
+Resources:
+
+https://aws.amazon.com/
+https://www.horangi.com/
+https://cloudsecurityalliance.org/
