@@ -1,0 +1,46 @@
+What are three benefits of following CIS Benchmarks?
+
+Three of the benefits of of following CIS Benchmarks are:
+- The collected expertise of a global community of IT and cybersecurity professional
+- Compliance management consistency
+- Easy-to-deploy configurations for improved operational efficiency and sustainability.
+
+What are the seven core categories of CIS Benchmarks?
+
+
+
+The seven core categories of CIS Benchmarks cover security configurations for various systems:
+
+Operating Systems: These benchmarks focus on core operating systems like Microsoft Windows, Linux, and Apple macOS.
+Network Devices: They provide recommendations for securing network equipment such as firewalls and routers.
+Databases: These benchmarks address security configurations for popular database management systems.
+Cloud Platforms: They offer guidance on securing cloud environments like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
+Container Orchestration: This category includes recommendations for configuring container orchestration platforms like Kubernetes.
+Web Servers: These benchmarks provide security best practices for web server software like Apache and Microsoft IIS.
+Mobile Devices: They address security configurations for mobile devices running various operating systems.
+
+
+How would you convince your manager that applying CIS Benchmarks could fast-track your organization’s compliance?
+
+
+
+Here's how you can convince your manager that applying CIS Benchmarks can fast-track your organization's compliance:
+
+Focus on Benefits:
+
+Reduced Risk & Improved Security: Highlight that CIS Benchmarks are best practices developed by cybersecurity experts. Implementing them reduces vulnerabilities and strengthens your overall security posture. This translates to fewer security incidents and potential data breaches.
+Compliance Efficiency: Explain that CIS Benchmarks align with many industry regulations (HIPAA, PCI DSS, etc.). By following these benchmarks, a significant portion of your compliance requirements are already addressed, saving time and resources during audits.
+Standardized Security: Emphasize that CIS Benchmarks provide a standardized approach to security configuration across your systems. This consistency makes it easier to manage security, identify deviations, and simplifies future audits.
+
+Address Potential Concerns:
+
+Time & Resources: Acknowledge that implementing CIS Benchmarks might require some initial investment in time and resources. However, explain the long-term cost savings from reduced security risks and streamlined compliance efforts.
+Customization: Reassure your manager that CIS Benchmarks are not a one-size-fits-all solution. They can be customized to fit your specific organization's needs while still adhering to core security principles.
+
+
+Resources:
+https://www.ibm.com
+https://www.cisecurity.org/
+https://blog.rsisecurity.com
+https://www.sans.org
+Code For ALL Lectures
