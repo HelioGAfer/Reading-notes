@@ -1,0 +1,74 @@
+Consider a bank ATM that allows users to access bank account balances. What measures can the ATM incorporate to cover the principles of the CIA triad?
+
+The CIA triad refers to Confidentiality, Integrity, and Availability, which are essential principles for securing any information system, including ATMs. Here's how an ATM can incorporate measures to address each principle:
+
+Confidentiality:
+
+PIN Security: The ATM should employ robust PIN security measures. This can include:
+One-time PINs: Generate a unique PIN for each transaction that is sent via a secure channel (e.g., SMS) to the user's phone.
+Encrypted PIN Pad: Use a keypad that encrypts the PIN as it's entered, preventing anyone from observing the keystrokes.
+Masked PIN Display: Only show asterisks (*) instead of the actual digits as the user enters their PIN.
+
+Integrity:
+
+Data Encryption: All data transmitted between the ATM, the user's card, and the bank's network should be encrypted to prevent tampering. This includes account information, transaction details, and PINs.
+Transaction Verification: The ATM should prompt the user for confirmation before finalizing a transaction. This helps prevent unauthorized changes by malware or hackers.
+Checksums: Utilize checksums to verify data integrity during transmission. Any discrepancy would indicate potential tampering.
+
+Availability:
+
+Redundant Systems: The ATM should have redundant systems like backup power supplies and communication channels to ensure continuous operation in case of primary system failure.
+Regular Maintenance: Schedule regular maintenance to identify and address potential security vulnerabilities and ensure smooth operation.
+Physical Security:
+The ATM should be located in a well-lit, well-trafficked area with CCTV surveillance.
+The ATM itself should be securely bolted down to prevent physical theft.
+
+
+
+Name three best practices that support the CIA triad.
+
+
+Here are three best practices that support the CIA triad:
+
+Implement strong access controls: This ensures only authorized individuals can access sensitive information. This can involve using multi-factor authentication (MFA), enforcing user permissions, and regularly monitoring access control lists.
+
+Encrypt data at rest and in transit: Encryption scrambles data into an unreadable format, protecting confidentiality. This applies to data stored on devices (at rest) and when it's being transmitted over networks (in transit).
+
+Regularly update and patch systems: Software vulnerabilities can be exploited by attackers. By keeping systems updated with the latest security patches, you address these vulnerabilities and improve overall system integrity and availability.
+
+What are the three stages of the risk management lifecycle? What is each stage’s main goal or objective?
+
+
+
+Here are the three common stages of the risk management lifecycle, along with their main goals:
+
+Identify Risks:
+
+Main Goal: This initial stage focuses on proactively recognizing potential threats and vulnerabilities that could disrupt your organization. Here, the aim is to be comprehensive and identify all the possible risks, both internal and external.
+Activities: Brainstorming sessions, analyzing past incidents, considering industry trends, and leveraging threat modeling techniques.
+
+Assess and Analyze Risks:
+
+Main Goal: Once risks are identified, this stage involves a deeper examination to understand their potential impact. The goal is to prioritize risks based on their likelihood of occurring and the severity of their consequences.
+Activities: Evaluate the probability and severity of each risk, perform cost-benefit analysis to determine appropriate mitigation strategies.
+
+Respond to and Control Risks:
+
+Main Goal: This final stage translates analysis into action. Here, the focus is on developing and implementing strategies to address the identified risks. These strategies can involve various approaches like avoiding the risk altogether, transferring the risk to another party, mitigating the risk's impact, or accepting the risk with appropriate controls in place.
+Activities: Develop mitigation plans (avoid, transfer, reduce, accept), implement controls and monitor their effectiveness, update risk assessments as circumstances change.
+
+
+
+
+
+
+
+
+Resources:
+https://www.infosecinstitute.com
+https://www.veeam.com/
+http://www.google.com
+http://wiki.doing-projects.org
+https://fastercapital.com
+
+Code For All Lectures
