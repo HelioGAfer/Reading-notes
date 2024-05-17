@@ -1,0 +1,64 @@
+1. You have been made responsible for the company’s file server. How would you preserve the three elements of the CIA triad?
+
+
+Here's how to keep it secure using the CIA triad (like a three-legged stool):
+
+Confidentiality (Secrecy):
+
+Lock it up: Encrypt the files like putting them in a locked box. Only people with the key (decryption key) can see what's inside.
+
+Limited access: Give people access only to the files they need for their jobs. Think of it like assigning keys to specific drawers in the cabinet.
+
+Integrity (Accuracy):
+
+File guards: Set permissions to prevent anyone from accidentally changing things. Imagine putting a "Do Not Touch" sign on important documents.
+
+Double-check: Use a special code (hashing) to check if files have been tampered with, like checking a document for any edits.
+
+Backups: Regularly copy the files to a safe place (backups) in case something goes wrong, like having a spare copy of important documents at home.
+
+Availability (Accessibility):
+
+Extra copies: Make copies of the data on the server (redundancy), in case one storage drive fails, just like having multiple folders in the cabinet.
+
+Disaster plan: Have a plan to get the server back up quickly if something bad happens, like a fire drill for the files.
+
+Keep watch: Monitor the server for suspicious activity, like having a security guard check the filing cabinet for break-in attempts.
+
+2. Explain how hashing verifies data integrity using non-technical terms.
+
+
+
+Imagine you download a funny cat video from the internet. You want to make sure the video isn't corrupted and will play properly. Here's how hashing helps:
+
+Secret Code Maker: Before you download, the website creates a special secret code, like a fingerprint, for the video. This code is based on the video's content, like all the frames showing the silly cat.
+
+Downloading the Video: Now you download the video to your computer.
+
+Checking the Code: Once downloaded, your computer doesn't need to watch the entire video to see if it's okay. It simply creates its own secret code for the downloaded video.
+
+Matchmaker Time: Finally, your computer compares the code it made (fingerprint) with the one the website sent. If both codes match perfectly, it's like a high five! It means the video downloaded without any issues, and you're ready to enjoy the feline fun.
+
+Uh Oh, Something's Wrong: However, if the codes don't match, there's a problem. This mismatch tells you something went wrong during download, and the video might be messed up. You might need to download it again to get the correct version with the purrfect code.
+
+Think of the code as a quick way to check the video's health. Any changes to the video (like missing frames) would completely change the code, letting you know something's wrong. This is how hashing helps verify that data hasn't been tampered with!
+
+3. How is hashing and encryption different?
+
+
+
+Here's a table summarizing the key differences:
+
+Feature	Hashing	Encryption
+Purpose	Verifies data integrity	Protects data confidentiality
+Changes Detectable?	Yes, any change alters the hash	No, changes are hidden
+Original Data Visible?	Yes, anyone can see the data	No, requires decryption key
+
+
+
+Resources:
+
+www.google.com
+https://www.jscape.com/
+https://www.howtogeek.com/
+Code For All Lectures
