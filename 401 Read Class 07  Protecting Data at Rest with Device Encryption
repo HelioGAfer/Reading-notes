@@ -1,0 +1,32 @@
+From your day to day computer use, provide examples of when data is at rest and when it is in transit.
+
+Data in transit, also called data in motion, is data that is actively moving from one location to another. This can be across the internet, within a private network, or from one device to another.
+
+So much of what we do daily involves data in transit. Sending an email, browsing online, accessing cloud applications, and sending a text all create data in transit.
+
+As its name implies, data at rest is data that is not actively moving. It is data stored on a hard drive or archived to a storage device. For example, email stored in your email application such as Outlook, and files stored on your laptop are both data at rest.
+
+
+Explain the role data encryption with regards to the CIA triad.
+
+
+
+The CIA triad (Confidentiality, Integrity, and Availability) is a core principle in data security. Encryption plays a crucial role in supporting two of these principles:
+
+Confidentiality: This principle ensures only authorized users can access sensitive information. Encryption directly addresses this by scrambling the data into an unreadable format. Imagine a locked box – the data is locked away, and only those with the key (decryption key) can access it. This is vital for protecting sensitive information like financial records, employee data, or intellectual property.
+
+Availability: While encryption itself doesn't directly guarantee availability (accessibility), it can indirectly contribute to it in some scenarios. Here's how:
+
+Ransomware prevention: Strong encryption makes data a less attractive target for ransomware attacks. Since attackers can't access the information even if they infiltrate a system, they're less likely to deploy ransomware that would disrupt access for authorized users.
+
+However, it's important to note that encryption can also impact availability in some situations. For instance, if the decryption key is lost or unavailable, the encrypted data becomes permanently inaccessible. This highlights the importance of secure key management for maintaining data availability alongside encryption.
+
+In summary, encryption plays a critical role in securing data confidentiality by keeping it hidden from unauthorized eyes. It can also indirectly contribute to data availability by deterring certain attacks. However, it's crucial to have proper key management practices in place to ensure authorized users can still access the data when needed.
+
+
+
+Resources
+
+https://www.digitalguardian.com/
+https://quest-technology-group.com/
+Code for All Lectures
