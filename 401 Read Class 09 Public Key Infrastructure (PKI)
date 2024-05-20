@@ -1,1 +1,55 @@
+Name the three main components which make up PKI.
 
+
+The three main components of a Public Key Infrastructure (PKI) are:
+
+Digital Certificates - These electronic documents bind a public key to an entity's identity, like a person or an organization. They act like digital passports that verify who someone or something claims to be online.
+
+Certificate Authority (CA) - This trusted entity acts as the issuing party for digital certificates. It verifies the identity of the entity requesting a certificate and then signs the certificate with its own private key, making it tamper-proof.
+
+Registration Authority (RA) - This optional component is responsible for verifying the identity of the entity requesting a certificate before it gets sent to the CA for signing. This can be especially important for high-assurance certificates.
+
+How would you explain, to a non-technical friend, the role PKI plays in protecting traffic between your browser and a web server.
+
+
+
+Imagine you're ordering a pizza online. Normally, you'd shout out your address to the delivery person on the street - anyone could hear it!
+
+PKI is like having a secure delivery system:
+
+Secret Hamdshakes -  You and the pizza place have secret handshakes (like digital keys). One handshake lets anyone send you a message, but another handshake (your private key) is needed to open it.
+
+The Trustworthy Mailbox (Certificate Authority) - There's a trusted company (like a certificate authority) that checks IDs (like website certificates) to confirm they're legit. They then give the pizza place a special "verified" sticker for their mailbox (certificate signing).
+
+Sending the Order - When you order, you write it down and lock it with the pizza place's special mailbox (encrypt with their public key). Anyone can see the locked order, but only the pizza place has the key (private key) to unlock and see your details.
+
+
+
+PKI works the same way online. The website gives your browser its "verified" mailbox (certificate). Your browser checks with the trusted company to make sure the mailbox is real. If so, your browser uses it to scramble your order info (encrypt) before sending it. Only the website has the matching key (private key) to unscramble and see your order (decrypt).
+
+This way, even if someone snoops on the message travelling between you and the website, they can't understand it without the key! PKI keeps your online shopping safe and secure.
+
+
+
+
+What is the main weakness of the PKI architecture?
+
+
+
+The main weakness of PKI architecture revolves around trust in the Certificate Authority (CA). Here's why:
+
+Single Point of Failure: CAs are trusted entities responsible for verifying identities and issuing certificates. If a hacker compromises a CA, they could potentially issue fake certificates for any website, tricking your browser into thinking it's a legitimate one. This could lead to stolen information or malware infections.
+
+Imagine the trusted playground monitor (CA) from our previous example gets tricked by a bully (hacker). The bully could get a fake ID (fake certificate) and the monitor might give them a stamp of approval (sign the certificate). Now, the bully could pretend to be your friend (impersonate a website) and try to get your secrets!
+
+Human Error: Mistakes by CA staff can also lead to security issues. For instance, a certificate could be issued to the wrong entity or for an insecure website.
+
+Decentralization: There are many CAs operating globally, and not all of them have the same security standards. This makes it challenging to guarantee the trustworthiness of every certificate encountered online.
+
+
+Resources:
+
+https://www.ssh.com/
+https://www.appviewx.com/
+https://keytalk.com/
+Code for All Lectures
