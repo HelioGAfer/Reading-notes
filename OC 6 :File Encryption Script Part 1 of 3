@@ -1,0 +1,96 @@
+from cryptography.fernet import Fernet
+
+def encrypt_file(key, filepath):
+  """Encrypts a file using the provided key and filepath.
+  Deletes the original file and replaces it with the encrypted version."""
+  with open(filepath, 'rb') as file:
+    data = file.read()
+    print(data)
+  fernet = Fernet(key)
+  encrypted_data = fernet.encrypt(data)
+  with open(filepath, 'wb') as file:
+    file.write(encrypted_data)
+  print(f"File encrypted successfully: {filepath}")
+
+def decrypt_file(key, filepath):
+  """Decrypts a file using the provided key and filepath.
+  Deletes the encrypted file and replaces it with the decrypted version."""
+  with open(filepath, 'rb') as file:
+    encrypted_data = file.read()
+  fernet = Fernet(key)
+  try:
+    decrypted_data = fernet.decrypt(encrypted_data)
+  except Fernet.InvalidSignature:
+    print(f"Error: Invalid decryption key or corrupt file.")
+    return
+  with open(filepath, 'wb') as file:
+    file.write(decrypted_data)
+  print(f"File decrypted successfully: {filepath}")
+
+def encrypt_message(key, message):
+  """Encrypts a message using the provided key and prints the ciphertext."""
+  fernet = Fernet(key)
+  encrypted_message = fernet.encrypt(message.encode()).decode()
+  print(f"Encrypted message: {encrypted_message}")
+
+def decrypt_message(key, message):
+  """Decrypts a message using the provided key and prints the cleartext."""
+  fernet = Fernet(key)
+  try:
+    decrypted_message = fernet.decrypt(message.encode()).decode()
+  except Fernet.InvalidSignature:
+    print(f"Error: Invalid decryption key or corrupt message.")
+    return
+  print(f"Decrypted message: {decrypted_message}")
+
+def write_key():
+    """
+    Generates a key and save it into a file
+    """
+    key = Fernet.generate_key()
+    with open("key.key", "wb") as key_file:
+        key_file.write(key)
+
+def load_key():
+    """
+    Loads the key from the current directory named `key.key`
+    """
+    key = open("key.key", "rb").read()
+    print(key)
+    return key
+
+def main():
+
+  """Prompts user for mode selection and performs corresponding actions."""
+  print("Select a mode:")
+  print("1. Encrypt a file")
+  print("2. Decrypt a file")
+  print("3. Encrypt a message")
+  print("4. Decrypt a message")
+  print("5. Turnoff")
+  mode = input("Enter your choice (1-5): ")
+  key = load_key()
+  while(True):
+    # Get key
+    if mode == '1':
+        filepath = input("Enter the file path to encrypt: ")
+        encrypt_file(key, filepath)
+    elif mode == '2':
+        filepath = input("Enter the file path to decrypt: ")
+        decrypt_file(key, filepath)
+    elif mode == '3':
+        message = input("Enter the message to encrypt: ")
+        encrypt_message(key, message)
+    elif mode == '4':
+        message = input("Enter the message to decrypt: ")
+        decrypt_message(key, message)
+    elif mode == '5':
+       return
+    else:
+        print("Invalid mode selection.")    
+    mode = input("Enter your choice (1-5): ")
+
+if __name__ == "__main__":
+  #write_key()
+  main()
+  #C:\Users\Utilizador\Desktop\ola.txt
