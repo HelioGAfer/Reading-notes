@@ -1,1 +1,37 @@
+How would a security team benefit from implementing a SOAR solution?
 
+
+
+Security teams are swamped with alerts and repetitive tasks. SOAR helps by:
+
+Automating routine stuff, freeing analysts for tougher problems.
+Sorting alerts by importance, so they tackle the biggest fires first.
+Gathering all security info in one place for a clearer picture.
+Creating step-by-step guides for common threats, reducing mistakes.
+Making them more productive, so they can focus on preventing future attacks.
+
+In short, SOAR gives security teams superpowers to fight cyber threats faster and smarter.
+
+Explain how a SOAR solution fits into the Incident Response process.
+
+By automating repetitive tasks and providing a central platform, SOAR ensures the security team can respond to incidents efficiently and effectively.
+
+
+
+During a security incident, SOAR acts like an assistant director. It:
+
+Sets the plan (playbooks) for common attacks.
+Gathers clues (security data) from different sources.
+Handles routine tasks (like initial steps) so analysts focus on bigger issues.
+Helps document everything and even automates some recovery.
+
+Basically, SOAR frees up security analysts to focus on the real detective work
+
+
+
+Resources:
+
+https://www.forbes.com/
+https://cybersecurity.att.com/
+www.google.com
+Code for all Lectures
