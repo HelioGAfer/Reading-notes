@@ -1,0 +1,38 @@
+What are three tasks which SOCs often perform?
+
+
+
+SOCs (Security Operations Centers) juggle a variety of tasks, but three of their core functions are:
+
+Security Monitoring & Alerting: SOC analysts constantly monitor security systems for suspicious activity. This involves reviewing logs, analyzing network traffic, and keeping an eye out for potential threats. If something fishy is detected, they'll be alerted and ready to investigate.
+
+Security Incident Response: When a security incident does occur (like a cyberattack), the SOC swings into action. They'll investigate the incident, determine its scope and impact, and take steps to contain the damage and eradicate the threat. This may involve isolating infected systems, patching vulnerabilities, and collecting evidence.
+
+Security Threat Analysis: A good SOC doesn't just wait for attacks to happen. They also proactively analyze threat intelligence to understand the latest cyber threats and vulnerabilities. This allows them to take preventive measures and shore up the organization's defenses before attackers can exploit weaknesses.
+
+Explain what a SIEM solution is and how the SOC utilizes it in non-technical terms.
+
+
+
+Imagine your house and the SOC is like a security guard keeping an eye on things. A SIEM system would be like a combination of security cameras and a fancy alarm system:
+
+Cameras Everywhere: The SIEM acts like multiple security cameras installed throughout your house - doors, windows, even inside rooms. It collects information (logs) from all your security tools (cameras) like firewalls, door sensors, and motion detectors.
+Always Recording: Just like a DVR, the SIEM constantly records everything these "cameras" see. This includes things like doors opening (login attempts), windows being jiggled (suspicious network activity), or someone walking through a room they shouldn't be in (unauthorized access).
+The Smart Alarm: The SIEM is smarter than a regular alarm. It can analyze all this footage together. For instance, if the front door camera sees someone trying to pick the lock (login attempt) and then a motion sensor in the living room detects movement at the same time (unauthorized access), the SIEM can trigger the alarm (alert the SOC) because this might be a break-in (security incident).
+
+So, the SIEM helps the security guard (SOC) see everything happening in the house at once, understand how events are connected, and know when to take action if something suspicious is going on.
+
+
+How does the typical SOC team structure resemble the structure of an IT Help Desk.
+
+
+
+Both SOC and IT Help Desk teams can have tiered structures and require strong communication. However, their goals differ. IT Help Desks fix user tech problems, while SOCs are security detectives, constantly on the lookout for cyber threats. IT staff need broad tech knowledge, while SOC analysts are cybersecurity specialists.
+
+
+Resources:
+https://www.splunk.com/
+https://www.netwitness.com/
+https://www.cynet.com/
+www.google.com
+Code for All lectures
